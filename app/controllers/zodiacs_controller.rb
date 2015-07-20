@@ -1,4 +1,4 @@
-class Zodiacscontroller
+class ZodiacsController < ApplicationController
   def ram
     @prediction = "As your professional dreams unfold, Aries, you may worry about the downside. First, there are new responsibilities that you might doubt your ability to fulfill. Second, you might be catapulted into an uncomfortable new realm of office politics. Don't let these matters put a damper on your enthusiasm. You have what it takes to fulfill the first concern and the wisdom to avoid the second. Onward and upward."
 
@@ -36,7 +36,7 @@ class Zodiacscontroller
   end
 
   def scales
-    @fortune = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
+    @prediction = "People close to you might be a bit worried about you, Libra. Too much work and socializing might have you feeling less than your usual self, and perhaps even a little feverish and headachy. If so, this is a good day to take time out, stay home, and rest. Don't worry about sabotaging your success. It will continue. Take a break and your body will reward you with greater clarity and concentration."
 
     render("scales.html.erb")
   end
@@ -54,7 +54,7 @@ class Zodiacscontroller
   end
 
   def goat
-    prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
+    @prediction = "You could be on a real emotional high today because of your success and that of other household members, Capricorn. Your mind may be buzzing with ideas for future expansion, some of which may not be all that workable. However, you should allow yourself a few flights of fancy. Tomorrow your feet will be back on the ground and you will see things in a more practical light."
 
     render("goat.html.erb")
   end
